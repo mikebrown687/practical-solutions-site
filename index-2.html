@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sell Your Land Fast for Cash | Practical Solutions Management LLC</title>
+<meta name="description" content="Get a fair cash offer for your land with no fees, no commissions, and no hassle. Practical Solutions Management LLC buys land across the US and Canada."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+/* ================================================================
+   TOKENS
+================================================================ */
+:root {
+  --white:      #ffffff;
+  --off-white:  #f5f4f1;
+  --black:      #111111;
+  --ink:        #1e1e1e;
+  --grey-d:     #3a3a3a;
+  --grey-m:     #666666;
+  --grey-s:     #999999;
+  --grey-rule:  #e2e2de;
+  --grey-bg:    #f9f9f7;
+  --navy:       #1b2e4b;
+  --navy-mid:   #2a4a72;
+  --navy-pale:  #eef2f8;
+  --navy-acc:   #3565a8;
+  --green:      #1c6b38;
+  --green-h:    #23844a;
+  --green-pale: #edf7f1;
+  --green-bdr:  #b2d9c0;
+  --serif:      'Libre Baskerville', Georgia, serif;
+  --sans:       'DM Sans', system-ui, sans-serif;
+  --max:        1180px;
+  --r:          8px;
+  --ease:       cubic-bezier(0.25,0.46,0.45,0.94);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:16px;color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input{font-family:inherit}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 40px}
+
+/* ================================================================
+   NAV
+================================================================ */
+.nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--grey-rule)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-brand{display:flex;flex-direction:column;gap:1px}
+.nav-brand-name{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--navy);letter-spacing:.01em;line-height:1.1}
+.nav-brand-tag{font-size:.62rem;font-weight:400;color:var(--grey-s);letter-spacing:.1em;text-transform:uppercase}
+.nav-cta{display:inline-block;background:var(--green);color:var(--white);border:none;border-radius:var(--r);padding:11px 24px;font-size:.83rem;font-weight:600;letter-spacing:.03em;cursor:pointer;transition:background .2s,transform .18s;text-decoration:none}
+.nav-cta:hover{background:var(--green-h);transform:translateY(-1px)}
+
+/* ================================================================
+   HERO — split navy/photo background
+================================================================ */
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;overflow:hidden}
+.hero-bg{position:absolute;inset:0;display:grid;grid-template-columns:55% 45%;z-index:0}
+.hero-bg-l{background:var(--navy);position:relative}
+.hero-bg-l::after{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px}
+.hero-bg-l::before{content:'';position:absolute;top:0;bottom:0;right:-60px;width:120px;background:var(--navy);transform:skewX(-4deg);z-index:1}
+.hero-bg-r{position:relative;overflow:hidden}
+.hero-bg-r img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(.82)}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:55% 45%;flex:1}
+.hero-left{padding:80px 52px 60px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:24px}
+.h-dash{display:inline-block;width:24px;height:1px;background:rgba(255,255,255,.4)}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.6rem,4.2vw,4rem);font-weight:700;color:var(--white);line-height:1.1;letter-spacing:-.02em;margin-bottom:22px}
+.hero-h1 em{font-style:italic;font-weight:400;color:rgba(255,255,255,.65)}
+.hero-sub{font-size:1rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.72;margin-bottom:40px;max-width:420px}
+.hero-proof{display:flex;flex-direction:column;gap:11px}
+.proof-item{display:flex;align-items:center;gap:12px;font-size:.87rem;color:rgba(255,255,255,.7)}
+.proof-ck{flex-shrink:0;width:20px;height:20px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center}
+.proof-ck svg{width:9px;height:9px;stroke:rgba(255,255,255,.9);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-right{display:flex;align-items:center;justify-content:center;padding:48px 40px 48px 52px}
+
+/* Form card */
+.form-card{background:var(--white);border-radius:14px;box-shadow:0 2px 4px rgba(0,0,0,.04),0 20px 60px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);padding:40px 36px 44px;width:100%;max-width:400px;animation:cardRise .6s .1s var(--ease) both}
+@keyframes cardRise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.form-badge{display:inline-block;background:var(--navy-pale);color:var(--navy-acc);font-size:.67rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:50px;margin-bottom:14px}
+.form-title{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:6px}
+.form-desc{font-size:.82rem;color:var(--grey-m);margin-bottom:24px}
+.form-sep{height:1px;background:var(--grey-rule);margin-bottom:22px}
+.field+.field{margin-top:14px}
+.field-label{display:block;font-size:.71rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--grey-d);margin-bottom:6px}
+.field-input{display:block;width:100%;padding:12px 14px;border:1px solid #d4d4d0;border-radius:var(--r);font-size:.93rem;color:var(--ink);background:var(--white);outline:none;transition:border-color .18s,box-shadow .18s}
+.field-input::placeholder{color:#c0c0ba}
+.field-input:focus{border-color:var(--navy-acc);box-shadow:0 0 0 3px rgba(53,101,168,.13)}
+.field-input.err{border-color:#b94040}
+.btn-submit{display:block;width:100%;margin-top:18px;padding:15px;background:var(--green);color:var(--white);border:none;border-radius:var(--r);font-size:.94rem;font-weight:600;letter-spacing:.04em;cursor:pointer;box-shadow:0 4px 20px rgba(28,107,56,.32);transition:background .2s,transform .18s,box-shadow .2s}
+.btn-submit:hover{background:var(--green-h);transform:translateY(-2px);box-shadow:0 8px 28px rgba(28,107,56,.38)}
+.form-trust-note{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:13px;font-size:.73rem;color:var(--grey-s)}
+.form-trust-note svg{width:12px;height:12px;stroke:var(--grey-s);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.form-success{display:none;margin-top:14px;padding:16px;background:var(--green-pale);border:1px solid var(--green-bdr);border-radius:var(--r);color:var(--green);font-size:.88rem;font-weight:600;text-align:center}
+
+/* ================================================================
+   SECTIONS
+================================================================ */
+.section{padding:100px 0}
+.section--alt{background:var(--off-white)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--navy-acc);margin-bottom:14px}
+.e-rule{display:inline-block;width:22px;height:1px;background:var(--navy-acc)}
+.s-title{font-family:var(--serif);font-size:clamp(1.9rem,3vw,2.7rem);font-weight:700;color:var(--ink);line-height:1.15;letter-spacing:-.015em}
+.s-sub{font-size:1rem;font-weight:300;color:var(--grey-m);line-height:1.75;margin-top:14px}
+
+/* ================================================================
+   TRUST / SITUATIONS
+================================================================ */
+.trust-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.trust-intro .s-sub{max-width:400px}
+.process-steps{margin-top:44px;display:flex;flex-direction:column;gap:24px}
+.p-step{display:flex;gap:16px;align-items:flex-start}
+.step-mk{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--navy-acc);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--serif);font-size:.88rem;font-weight:700;color:var(--navy-acc);margin-top:2px}
+.step-body h4{font-size:.93rem;font-weight:600;color:var(--ink);margin-bottom:4px}
+.step-body p{font-size:.82rem;font-weight:300;color:var(--grey-m);line-height:1.65}
+.sit-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sit-card{background:var(--white);border:1px solid var(--grey-rule);border-radius:10px;padding:22px 20px;display:flex;align-items:flex-start;gap:14px;transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s}
+.sit-card:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(0,0,0,.07);border-color:#c4d5ee}
+.sit-icon{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--navy-acc);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sit-icon svg{width:15px;height:15px;stroke:var(--navy-acc);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sit-text h4{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:4px;line-height:1.3}
+.sit-text p{font-size:.76rem;font-weight:300;color:var(--grey-m);line-height:1.58}
+
+/* ================================================================
+   GALLERY
+================================================================ */
+.gallery-section{background:var(--off-white);padding:100px 0}
+.gallery-header{text-align:center;margin-bottom:56px}
+.gallery-header .s-sub{max-width:520px;margin-left:auto;margin-right:auto}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:240px 240px;gap:14px}
+.gal-item{overflow:hidden;border-radius:10px;position:relative}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s var(--ease),filter .3s;filter:brightness(.94)}
+.gal-item:hover img{transform:scale(1.04);filter:brightness(1)}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(27,46,75,.65) 0%,transparent 55%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:20px}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-label{font-size:.78rem;font-weight:500;color:rgba(255,255,255,.9);letter-spacing:.06em;text-transform:uppercase}
+.gal-1{grid-column:1/6;grid-row:1/2}
+.gal-2{grid-column:6/9;grid-row:1/2}
+.gal-3{grid-column:9/13;grid-row:1/3}
+.gal-4{grid-column:1/4;grid-row:2/3}
+.gal-5{grid-column:4/9;grid-row:2/3}
+
+/* ================================================================
+   ABOUT
+================================================================ */
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.about-visual-wrap{position:relative}
+.about-img-main{width:100%;height:480px;object-fit:cover;border-radius:12px;display:block}
+.about-img-accent{position:absolute;bottom:-24px;left:-28px;width:200px;height:150px;object-fit:cover;border-radius:10px;border:5px solid var(--white);box-shadow:0 8px 32px rgba(0,0,0,.14)}
+.about-stat-badge{position:absolute;top:28px;right:-20px;background:var(--navy);color:var(--white);border-radius:10px;padding:18px 24px;box-shadow:0 8px 32px rgba(0,0,0,.2);text-align:center;min-width:110px}
+.stat-num{font-family:var(--serif);font-size:2rem;font-weight:700;line-height:1}
+.stat-lbl{font-size:.7rem;font-weight:400;color:rgba(255,255,255,.55);margin-top:4px;letter-spacing:.04em;line-height:1.4}
+.about-divider{width:36px;height:2px;background:var(--navy-acc);margin:20px 0 26px}
+.about-body{font-size:.97rem;font-weight:300;color:var(--grey-d);line-height:1.82}
+.about-body p+p{margin-top:18px}
+.about-body strong{color:var(--ink);font-weight:600}
+
+/* ================================================================
+   TESTIMONIALS
+================================================================ */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.testi-card{background:var(--white);border:1px solid var(--grey-rule);border-radius:12px;padding:36px 30px 30px;display:flex;flex-direction:column;gap:18px;transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+.testi-card:hover{transform:translateY(-3px);box-shadow:0 14px 44px rgba(0,0,0,.08)}
+.testi-qmark{font-family:var(--serif);font-size:4rem;line-height:.5;color:var(--navy-pale);user-select:none}
+.testi-stars{display:flex;gap:3px}
+.star-svg{width:14px;height:14px;fill:#b8962e}
+.testi-body{font-size:.9rem;font-weight:300;color:var(--grey-d);line-height:1.75;flex:1}
+.testi-author{display:flex;align-items:center;gap:13px;padding-top:18px;border-top:1px solid var(--grey-rule)}
+.auth-mono{width:44px;height:44px;border-radius:50%;background:var(--navy-pale);color:var(--navy);font-family:var(--serif);font-weight:700;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.auth-name{font-size:.87rem;font-weight:600;color:var(--ink)}
+.auth-where{font-size:.75rem;color:var(--grey-s);margin-top:2px}
+
+/* ================================================================
+   BOTTOM CTA
+================================================================ */
+.cta-band{background:var(--navy);padding:100px 0;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:26px 26px;pointer-events:none}
+.cta-inner{position:relative;z-index:1;text-align:center;max-width:660px;margin:0 auto;padding:0 40px}
+.cta-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:20px}
+.cta-eyebrow span{display:inline-block;width:20px;height:1px;background:rgba(255,255,255,.3)}
+.cta-h2{font-family:var(--serif);font-size:clamp(2.1rem,3.8vw,3.2rem);font-weight:700;color:var(--white);line-height:1.1;letter-spacing:-.015em;margin-bottom:18px}
+.cta-h2 em{font-style:italic;font-weight:400;opacity:.65}
+.cta-body{font-size:1rem;font-weight:300;color:rgba(255,255,255,.62);line-height:1.72;margin-bottom:38px}
+.btn-cta-lg{display:inline-block;background:var(--green);color:var(--white);border:none;border-radius:var(--r);padding:17px 42px;font-size:.95rem;font-weight:600;letter-spacing:.04em;cursor:pointer;box-shadow:0 6px 28px rgba(28,107,56,.45);transition:background .2s,transform .18s,box-shadow .2s;text-decoration:none}
+.btn-cta-lg:hover{background:var(--green-h);transform:translateY(-2px);box-shadow:0 10px 36px rgba(28,107,56,.55)}
+.cta-trust{display:flex;justify-content:center;gap:28px;margin-top:30px;flex-wrap:wrap}
+.cta-trust-item{display:flex;align-items:center;gap:7px;font-size:.77rem;color:rgba(255,255,255,.38)}
+.cta-trust-item svg{width:13px;height:13px;stroke:rgba(255,255,255,.4);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ================================================================
+   FOOTER
+================================================================ */
+footer{background:#0e1a28;padding:0}
+.footer-main{padding:48px 0 36px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand-name{font-family:var(--serif);font-size:1rem;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:8px}
+.footer-brand-desc{font-size:.8rem;font-weight:300;color:rgba(255,255,255,.33);max-width:300px;line-height:1.6}
+.footer-links-heading{font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-link{display:flex;align-items:center;gap:8px;font-size:.82rem;color:rgba(255,255,255,.55);text-decoration:none;transition:color .18s}
+.footer-link:hover{color:rgba(255,255,255,.88)}
+.footer-link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.footer-bottom{padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-copy{font-size:.74rem;color:rgba(255,255,255,.22)}
+.footer-copy a{color:rgba(255,255,255,.35);transition:color .18s}
+.footer-copy a:hover{color:rgba(255,255,255,.65)}
+
+/* ================================================================
+   REVEAL ANIMATIONS
+================================================================ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.hero-eyebrow{animation:riseIn .5s 0s var(--ease) both}
+.hero-h1{animation:riseIn .5s .08s var(--ease) both}
+.hero-sub{animation:riseIn .5s .16s var(--ease) both}
+.hero-proof{animation:riseIn .5s .24s var(--ease) both}
+@keyframes riseIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+/* ================================================================
+   RESPONSIVE
+================================================================ */
+@media(max-width:1024px){
+  .trust-layout{grid-template-columns:1fr;gap:52px}
+  .about-layout{grid-template-columns:1fr;gap:52px}
+  .about-img-accent{display:none}
+  .about-stat-badge{right:16px;top:16px}
+  .gallery-grid{grid-template-rows:200px 200px}
+}
+@media(max-width:860px){
+  .wrap{padding:0 24px}
+  .section{padding:72px 0}
+  .hero{min-height:auto}
+  .hero-bg{grid-template-columns:1fr}
+  .hero-bg-l{display:none}
+  .hero-bg-r img{height:360px}
+  .hero-bg-r::after{content:'';position:absolute;inset:0;background:rgba(27,46,75,.82)}
+  .hero-content{grid-template-columns:1fr}
+  .hero-left{padding:60px 24px 36px}
+  .hero-right{padding:0 24px 60px;justify-content:flex-start}
+  .form-card{max-width:100%}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .gal-1{grid-column:1/2;grid-row:1/2}.gal-2{grid-column:2/3;grid-row:1/2}
+  .gal-3{grid-column:1/3;grid-row:2/3}.gal-4{grid-column:1/2;grid-row:3/4}
+  .gal-5{grid-column:2/3;grid-row:3/4}
+  .testi-grid{grid-template-columns:1fr}
+  .footer-main{grid-template-columns:1fr;gap:36px}
+  .nav-brand-tag{display:none}
+}
+@media(max-width:600px){
+  .wrap{padding:0 18px}
+  .hero-bg-r img{height:280px}
+  .gallery-grid{grid-template-columns:1fr;grid-template-rows:repeat(5,200px)}
+  .gal-1,.gal-2,.gal-3,.gal-4,.gal-5{grid-column:1/2}
+  .gal-1{grid-row:1/2}.gal-2{grid-row:2/3}.gal-3{grid-row:3/4}.gal-4{grid-row:4/5}.gal-5{grid-row:5/6}
+  .about-img-main{height:280px}
+  .sit-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:6px}
+  .cta-trust{gap:16px}
+  .cta-inner{padding:0 18px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-brand-name">Practical Solutions Management</span>
+        <span class="nav-brand-tag">LLC &mdash; Land Buyers &bull; US &amp; Canada</span>
+      </div>
+      <a href="#offer" class="nav-cta">Get My Cash Offer</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg-l"></div>
+    <div class="hero-bg-r">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1400&auto=format&fit=crop&q=80" alt="Scenic land landscape" loading="eager"/>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow"><span class="h-dash"></span>Trusted Land Buyers &bull; US &amp; Canada</div>
+      <h1 class="hero-h1">Sell Your Land<br><em>Fast for Cash</em></h1>
+      <p class="hero-sub">Get a fair cash offer. No fees. No commissions. Choose your own closing date and walk away on your terms.</p>
+      <div class="hero-proof">
+        <div class="proof-item"><div class="proof-ck"><svg viewBox="0 0 9 7"><polyline points="1 3.5 3.2 5.8 8 1"/></svg></div>No real estate agent fees or commissions</div>
+        <div class="proof-item"><div class="proof-ck"><svg viewBox="0 0 9 7"><polyline points="1 3.5 3.2 5.8 8 1"/></svg></div>Close in as little as 14 days &mdash; or on your schedule</div>
+        <div class="proof-item"><div class="proof-ck"><svg viewBox="0 0 9 7"><polyline points="1 3.5 3.2 5.8 8 1"/></svg></div>Cash offer &mdash; no financing delays or uncertainty</div>
+        <div class="proof-item"><div class="proof-ck"><svg viewBox="0 0 9 7"><polyline points="1 3.5 3.2 5.8 8 1"/></svg></div>All land types and conditions considered</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="form-card" id="offer">
+        <div class="form-badge">Free Cash Offer &mdash; No Obligation</div>
+        <div class="form-title">What Is Your Land Worth?</div>
+        <p class="form-desc">Submit your details and receive your offer within 24 hours.</p>
+        <div class="form-sep"></div>
+        <form id="hero-form" novalidate>
+          <div class="field">
+            <label class="field-label" for="f-name">Full Name</label>
+            <input class="field-input" id="f-name" type="text" placeholder="John Smith" autocomplete="name" required/>
+          </div>
+          <div class="field">
+            <label class="field-label" for="f-phone">Phone Number</label>
+            <input class="field-input" id="f-phone" type="tel" placeholder="(555) 000-0000" autocomplete="tel" required/>
+          </div>
+          <div class="field">
+            <label class="field-label" for="f-email">Email Address</label>
+            <input class="field-input" id="f-email" type="email" placeholder="john@example.com" autocomplete="email" required/>
+          </div>
+          <div class="field">
+            <label class="field-label" for="f-loc">Property Location</label>
+            <input class="field-input" id="f-loc" type="text" placeholder="County, State or Province" required/>
+          </div>
+          <button type="submit" class="btn-submit">Get My Cash Offer</button>
+          <div class="form-success" id="form-ok">Thank you &mdash; we will be in touch within 24 hours.</div>
+        </form>
+        <div class="form-trust-note">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          No obligation. No pressure. Fast response.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST / SITUATIONS -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="trust-layout">
+      <div class="trust-intro reveal">
+        <div class="eyebrow"><span class="e-rule"></span>Your Situation</div>
+        <h2 class="s-title">No Matter Your Situation,<br>We Can Help</h2>
+        <p class="s-sub">Landowners come to us from all walks of life. Whatever your circumstances, we approach every conversation with discretion, respect, and a genuine commitment to finding the right path forward.</p>
+        <div class="process-steps">
+          <div class="p-step">
+            <div class="step-mk">1</div>
+            <div class="step-body"><h4>Submit Your Property Details</h4><p>Fill out our short form with basic information about your land. Takes under two minutes.</p></div>
+          </div>
+          <div class="p-step">
+            <div class="step-mk">2</div>
+            <div class="step-body"><h4>Receive a Fair Written Offer</h4><p>We review your property and send a clear, no-obligation cash offer within 24&ndash;48 hours.</p></div>
+          </div>
+          <div class="p-step">
+            <div class="step-mk">3</div>
+            <div class="step-body"><h4>Close on Your Terms &amp; Get Paid</h4><p>If you accept, we handle all the paperwork. You choose the date and receive your funds.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="sit-grid reveal">
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div class="sit-text"><h4>Inherited Land</h4><p>Inherited property you have no plans to use? We make the process simple and respectful.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <div class="sit-text"><h4>Vacant Land Not Being Used</h4><p>Land that carries costs but generates nothing. Convert it into cash without delay.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div class="sit-text"><h4>Property Tax Issues</h4><p>Falling behind on taxes? Selling quickly can resolve the situation before it escalates.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="sit-text"><h4>Need Cash Quickly</h4><p>When you need liquidity fast, a traditional listing takes far too long. We move quickly.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="sit-text"><h4>Relocating</h4><p>Moving and need to liquidate assets? We work around your schedule and handle the details.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="sit-text"><h4>Financial Difficulties</h4><p>We approach every situation with full discretion. Selling land can provide meaningful relief.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/></svg></div>
+          <div class="sit-text"><h4>Unwanted Property</h4><p>Not every piece of land fits your plans anymore. Turn what you no longer need into capital.</p></div>
+        </div>
+        <div class="sit-card">
+          <div class="sit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div class="sit-text"><h4>Out of State / Province</h4><p>Managing land from a distance is costly. We make remote selling easy &mdash; no travel required.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="wrap">
+    <div class="gallery-header reveal">
+      <div class="eyebrow" style="justify-content:center;"><span class="e-rule"></span>Properties We Work With</div>
+      <h2 class="s-title">We Buy All Types of Land</h2>
+      <p class="s-sub">From rural acreage and farmland to vacant lots and recreational parcels, we evaluate every property on its own merits and make fair, straightforward offers.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gal-item gal-1">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&auto=format&fit=crop&q=75" alt="Open farmland and rural acreage" loading="lazy"/>
+        <div class="gal-overlay"><span class="gal-label">Rural Acreage</span></div>
+      </div>
+      <div class="gal-item gal-2">
+        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&auto=format&fit=crop&q=75" alt="Wooded land and timber property" loading="lazy"/>
+        <div class="gal-overlay"><span class="gal-label">Wooded Land</span></div>
+      </div>
+      <div class="gal-item gal-3">
+        <img src="https://images.unsplash.com/photo-1416331108676-a22ccbe83e9c?w=700&auto=format&fit=crop&q=75" alt="Scenic open land" loading="lazy"/>
+        <div class="gal-overlay"><span class="gal-label">Scenic Lots</span></div>
+      </div>
+      <div class="gal-item gal-4">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&auto=format&fit=crop&q=75" alt="Open grassland property" loading="lazy"/>
+        <div class="gal-overlay"><span class="gal-label">Vacant Lots</span></div>
+      </div>
+      <div class="gal-item gal-5">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&auto=format&fit=crop&q=75" alt="Mountain and countryside land" loading="lazy"/>
+        <div class="gal-overlay"><span class="gal-label">Recreational Land</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="about-layout">
+      <div class="about-visual-wrap reveal">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80" alt="Professional real estate consultation" loading="lazy"/>
+        <img class="about-img-accent" src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&auto=format&fit=crop&q=75" alt="Land investment property" loading="lazy"/>
+        <div class="about-stat-badge">
+          <div class="stat-num">$0</div>
+          <div class="stat-lbl">Fees &amp;<br>Commissions</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow"><span class="e-rule"></span>About Us</div>
+        <h2 class="s-title" style="margin-top:4px;">We Help Landowners Find Simple,<br>Efficient Selling Solutions</h2>
+        <div class="about-divider"></div>
+        <div class="about-body">
+          <p><strong>Practical Solutions Management LLC</strong> was built around one straightforward belief: selling land should not be complicated, expensive, or stressful. We work directly with landowners across the United States and Canada who need a clear, honest path to selling &mdash; without the months of waiting, the agent commissions, or the uncertainty that comes with traditional real estate.</p>
+          <p>We are real estate investors, not brokers. That distinction matters. When we make you an offer, it is a genuine cash offer from a buyer who is prepared to close. We evaluate properties quickly, communicate transparently, and never apply pressure. If our offer works for you, we move forward on your timeline. If it does not, there is no obligation &mdash; full stop.</p>
+          <p>Every situation is different, and we treat it that way. Whether you have inherited rural acreage, own a vacant lot you no longer need, or are managing land from hundreds of miles away &mdash; we are here to listen first, then find a solution that <strong>actually fits your circumstances.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow"><span class="e-rule"></span>Client Experiences</div>
+      <h2 class="s-title">What Sellers Are Saying</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-qmark">&ldquo;</div>
+        <div class="testi-stars">
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-body">I inherited ten acres in rural Michigan after my father passed and had no idea what to do with it. Listing it felt overwhelming. Practical Solutions explained everything clearly, made a fair offer within two days, and we closed in under three weeks. The whole experience was handled with genuine care and professionalism.</p>
+        <div class="testi-author">
+          <div class="auth-mono">MR</div>
+          <div><div class="auth-name">Margaret R.</div><div class="auth-where">Sold inherited acreage &mdash; Michigan</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-qmark">&ldquo;</div>
+        <div class="testi-stars">
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-body">We were behind on property taxes for a vacant lot in Ontario we had not used in years. I was worried the situation would escalate into something serious. The team was completely transparent, never made me feel judged, and everything was resolved at closing. I could not have asked for a better experience.</p>
+        <div class="testi-author">
+          <div class="auth-mono">DK</div>
+          <div><div class="auth-name">David K.</div><div class="auth-where">Resolved tax arrears &mdash; Ontario, Canada</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-qmark">&ldquo;</div>
+        <div class="testi-stars">
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="star-svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-body">I was relocating from Arizona and needed to sell a rural lot quickly. My agent had it listed for four months with no interest. I submitted my information on a Monday, had a written offer by Tuesday, and closed before I finished packing. Everything was handled remotely. This is exactly how it should work.</p>
+        <div class="testi-author">
+          <div class="auth-mono">SL</div>
+          <div><div class="auth-name">Sandra L.</div><div class="auth-where">Sold remotely &mdash; Arizona</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-eyebrow"><span></span>Ready to Move Forward?</div>
+    <h2 class="cta-h2">Get a Fair Cash Offer<br>for Your Land <em>Today</em></h2>
+    <p class="cta-body">There is no cost, no commitment, and no pressure. Submit your property details and we will send you a straightforward written offer within 24 hours.</p>
+    <a href="#offer" class="btn-cta-lg">Get My Cash Offer</a>
+    <div class="cta-trust">
+      <div class="cta-trust-item"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Fully confidential</div>
+      <div class="cta-trust-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Response within 24 hours</div>
+      <div class="cta-trust-item"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Zero obligation</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-main">
+      <div>
+        <div class="footer-brand-name">Practical Solutions Management LLC</div>
+        <p class="footer-brand-desc">We help landowners across the United States and Canada sell their land quickly, fairly, and without the hassle of traditional real estate.</p>
+      </div>
+      <div>
+        <div class="footer-links-heading">Important Information</div>
+        <div class="footer-links">
+          <a class="footer-link" href="https://practicalsolutionsmanagement.h.trustco.ai" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Connect Via Text
+          </a>
+          <a class="footer-link" href="https://practicalsolutionsmanagement.h.trustco.ai/#termsArea" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Messaging Terms &amp; Conditions
+          </a>
+          <a class="footer-link" href="https://practicalsolutionsmanagement.h.trustco.ai/#privacyArea" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Messaging Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Practical Solutions Management LLC &bull; All rights reserved &bull; <a href="mailto:info@practicalsolutionsmgmt.com">info@practicalsolutionsmgmt.com</a></p>
+      <p class="footer-copy">US &amp; Canada &bull; All land types considered</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Form */
+document.getElementById('hero-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  const ids=['f-name','f-phone','f-email','f-loc'];
+  let ok=true;
+  ids.forEach(id=>{
+    const el=document.getElementById(id);
+    el.classList.remove('err');
+    if(!el.value.trim()){el.classList.add('err');ok=false;el.addEventListener('input',()=>el.classList.remove('err'),{once:true})}
+  });
+  if(!ok)return;
+  this.querySelectorAll('input,button').forEach(el=>el.disabled=true);
+  document.getElementById('form-ok').style.display='block';
+  setTimeout(()=>{
+    this.reset();
+    this.querySelectorAll('input,button').forEach(el=>el.disabled=false);
+    document.getElementById('form-ok').style.display='none';
+  },8000);
+});
+
+/* Scroll reveal */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const sibs=[...entry.target.parentElement.querySelectorAll('.reveal')];
+      entry.target.style.transitionDelay=(sibs.indexOf(entry.target)*0.07)+'s';
+      entry.target.classList.add('in');
+      obs.unobserve(entry.target);
+    }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* Smooth anchor */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();const h=document.querySelector('.nav').offsetHeight;window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-h-20,behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
